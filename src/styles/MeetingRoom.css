@@ -1,0 +1,291 @@
+body{
+    margin:0;
+    background:#f4f7fb;
+    font-family:Arial,sans-serif;
+}
+
+.meeting-container{
+    max-width:1200px;
+    margin:auto;
+    padding:35px;
+}
+
+.meeting-title{
+    text-align:center;
+    color:#4f46e5;
+    margin-bottom:30px;
+    font-size:34px;
+}
+
+.meeting-header{
+    background:white;
+    border-radius:15px;
+    padding:25px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    margin-bottom:25px;
+}
+
+.meeting-details h2{
+    margin:0;
+    color:#4f46e5;
+}
+
+.meeting-details p{
+    margin:8px 0;
+    color:#374151;
+    font-size:15px;
+}
+
+.meeting-main{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:25px;
+    margin-bottom:30px;
+}
+
+.video-section,
+.participants-section{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.meeting-video{
+    width:100%;
+    border-radius:12px;
+    background:black;
+    margin-top:15px;
+    margin-bottom:20px;
+}
+
+.controls{
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+}
+
+.control-btn{
+    flex:1;
+    min-width:140px;
+    padding:12px;
+    border:none;
+    border-radius:10px;
+    background:#4f46e5;
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.control-btn:hover{
+    background:#4338ca;
+}
+
+.participant-card{
+    background:#eef2ff;
+    padding:12px;
+    border-radius:10px;
+    margin-bottom:12px;
+    color:#374151;
+    font-weight:bold;
+}
+
+.chat-section{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.chat-section h3{
+    margin-top:0;
+    color:#4f46e5;
+}
+
+.chat-box{
+    height:280px;
+    overflow-y:auto;
+    border:1px solid #ddd;
+    border-radius:10px;
+    padding:15px;
+    background:#fafafa;
+    margin-bottom:20px;
+}
+
+.my-message{
+    background:#4f46e5;
+    color:white;
+    padding:12px;
+    border-radius:12px;
+    width:fit-content;
+    max-width:75%;
+    margin-left:auto;
+    margin-bottom:12px;
+}
+
+.my-message strong{
+    display:block;
+    margin-bottom:5px;
+}
+
+.my-message p{
+    margin:0;
+}
+
+.other-message{
+    background:#e5e7eb;
+    color:#111827;
+    padding:12px;
+    border-radius:12px;
+    width:fit-content;
+    max-width:75%;
+    margin-bottom:12px;
+}
+
+.other-message strong{
+    display:block;
+    margin-bottom:5px;
+}
+
+.other-message p{
+    margin:0;
+}
+
+.chat-input{
+    display:flex;
+    gap:15px;
+}
+
+.chat-input input{
+    flex:1;
+    padding:14px;
+    border:1px solid #ccc;
+    border-radius:10px;
+    font-size:15px;
+    outline:none;
+}
+
+.chat-input input:focus{
+    border-color:#4f46e5;
+}
+
+.chat-input button{
+    padding:14px 25px;
+    border:none;
+    border-radius:10px;
+    background:#4f46e5;
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.chat-input button:hover{
+    background:#4338ca;
+}
+
+.leave-btn{
+    background:#ef4444;
+    color:white;
+    border:none;
+    padding:15px 30px;
+    border-radius:10px;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.leave-btn:hover{
+    background:#dc2626;
+}
+
+@media(max-width:900px){
+
+.meeting-main{
+grid-template-columns:1fr;
+}
+
+.controls{
+flex-direction:column;
+}
+
+.chat-input{
+flex-direction:column;
+}
+
+.chat-input button{
+width:100%;
+}
+
+}
+.chat-input input{
+    flex:1;
+    padding:14px;
+    border:1px solid #d1d5db;
+    border-radius:10px;
+    background:white;
+    color:#111827;
+    font-size:15px;
+    outline:none;
+}
+
+.chat-input input::placeholder{
+    color:#9ca3af;
+}
+
+.chat-input input:focus{
+    border-color:#4f46e5;
+    box-shadow:0 0 0 3px rgba(79,70,229,.15);
+}
+/* ===========================
+      AI SUMMARY SECTION
+=========================== */
+
+.ai-card{
+    background:white;
+    margin-top:25px;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.ai-title{
+    color:#4f46e5;
+    margin-bottom:18px;
+    font-size:24px;
+}
+
+.ai-content{
+    background:#f8fafc;
+    border-left:5px solid #4f46e5;
+    padding:18px;
+    border-radius:10px;
+    color:#374151;
+    line-height:1.8;
+    white-space:pre-wrap;
+    font-size:15px;
+}
+
+.action-list{
+    margin:0;
+    padding-left:22px;
+}
+
+.action-list li{
+    background:#eef2ff;
+    margin-bottom:12px;
+    padding:12px 15px;
+    border-radius:8px;
+    color:#374151;
+    list-style:none;
+    position:relative;
+}
+
+.action-list li::before{
+    content:"✔";
+    color:#4f46e5;
+    font-weight:bold;
+    margin-right:10px;
+}

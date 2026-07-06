@@ -1,0 +1,114 @@
+body{
+    margin:0;
+    background:#f4f7fb;
+    font-family:Arial,sans-serif;
+}
+
+.view-container{
+    max-width:1100px;
+    margin:auto;
+    padding:40px;
+}
+
+.view-title{
+    text-align:center;
+    color:#4f46e5;
+    margin-bottom:35px;
+    font-size:34px;
+}
+
+.meeting-view-card{
+    background:white;
+    border-radius:18px;
+    padding:25px;
+    margin-bottom:25px;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.meeting-view-card:hover{
+    transform:translateY(-6px);
+}
+
+.meeting-view-card h2{
+    color:#4f46e5;
+    margin-bottom:20px;
+}
+
+.meeting-info{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:12px;
+    margin-bottom:20px;
+}
+
+.meeting-info p{
+    background:#eef2ff;
+    padding:12px;
+    border-radius:8px;
+    margin:0;
+    color:#374151;
+}
+
+.meeting-description{
+    background:#f9fafb;
+    padding:18px;
+    border-radius:10px;
+    margin-bottom:25px;
+}
+
+.meeting-description h3{
+    margin-top:0;
+    color:#111827;
+}
+
+.meeting-description p{
+    color:#4b5563;
+    line-height:1.7;
+}
+
+.meeting-actions{
+    display:flex;
+    gap:15px;
+}
+
+.join-btn{
+    flex:1;
+    background:#22c55e;
+    color:white;
+    border:none;
+    padding:14px;
+    border-radius:10px;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.join-btn:hover{
+    background:#16a34a;
+}
+
+.delete-btn{
+    flex:1;
+    background:#ef4444;
+    color:white;
+    border:none;
+    padding:14px;
+    border-radius:10px;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.delete-btn:hover{
+    background:#dc2626;
+}
+
+.no-meeting{
+    text-align:center;
+    font-size:22px;
+    color:gray;
+    margin-top:80px;
+}
