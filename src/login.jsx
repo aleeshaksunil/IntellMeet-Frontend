@@ -10,7 +10,7 @@ function Login({ onLogin }) {
   async function handleLogin() {
     try {
       const response = await axios.post(
-        "http://localhost:5000/login",
+        "https://intellmeet-backend-sdkg.onrender.com/login",
         {
           email,
           password

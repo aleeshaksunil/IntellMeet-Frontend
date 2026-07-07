@@ -26,7 +26,7 @@ function CreateMeeting({ user }) {
     const token = localStorage.getItem("token");
 
     const response = await axios.post(
-      "http://localhost:5000/meetings",
+      "https://intellmeet-backend-sdkg.onrender.com/meetings",
       {
         title,
         date,

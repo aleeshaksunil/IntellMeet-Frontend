@@ -4,7 +4,7 @@ import axios from "axios";
 import AISummary, { generateSummary } from "./AISummary";
 import ActionItems, { generateActions } from "./ActionItems";
 import "./styles/MeetingRoom.css";
-const socket = io("http://localhost:5000", {
+const socket = io("https://intellmeet-backend-sdkg.onrender.com", {
   auth: {
     token: localStorage.getItem("token")
   }
@@ -235,7 +235,7 @@ function MeetingRoom({
     const token = localStorage.getItem("token");
 
     await axios.post(
-      "http://localhost:5000/meetinghistory",
+      "https://intellmeet-backend-sdkg.onrender.com/meetinghistory",
       {
         title: meeting.title,
         participants,

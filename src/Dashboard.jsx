@@ -33,7 +33,7 @@ const [loading, setLoading] = useState(true);
    const token = localStorage.getItem("token");
 
 const response = await axios.get(
-  "http://localhost:5000/dashboardstats",
+  "https://intellmeet-backend-sdkg.onrender.com/dashboardstats",
   {
     headers: {
       Authorization: `Bearer ${token}`

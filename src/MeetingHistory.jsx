@@ -24,7 +24,7 @@ function MeetingHistory({ user }) {
 const token = localStorage.getItem("token");
 
 const response = await axios.get(
-  "http://localhost:5000/meetinghistory",
+  "https://intellmeet-backend-sdkg.onrender.com/meetinghistory",
   {
     headers: {
       Authorization: `Bearer ${token}`
@@ -59,7 +59,7 @@ async function deleteHistory(id) {
    const token = localStorage.getItem("token");
 
 await axios.delete(
-  `http://localhost:5000/meetinghistory/${id}`,
+  "https://intellmeet-backend-sdkg.onrender.com/meetinghistory/${id}",
   {
     headers: {
       Authorization: `Bearer ${token}`

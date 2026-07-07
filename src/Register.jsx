@@ -53,7 +53,7 @@ function validatePassword(value) {
     try {
 
       const response = await axios.post(
-        "http://localhost:5000/register",
+        "https://intellmeet-backend-sdkg.onrender.com/register",
         {
           name,
           email,

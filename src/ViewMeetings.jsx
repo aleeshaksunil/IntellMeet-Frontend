@@ -21,7 +21,7 @@ const [loading, setLoading] = useState(true);
 const token = localStorage.getItem("token");
 
 const response = await axios.get(
-  "http://localhost:5000/meetings",
+  "https://intellmeet-backend-sdkg.onrender.com/meetings",
   {
     headers: {
       Authorization: `Bearer ${token}`
@@ -60,7 +60,7 @@ const response = await axios.get(
 const token = localStorage.getItem("token");
 
 await axios.delete(
-  `http://localhost:5000/meetings/${id}`,
+  "https://intellmeet-backend-sdkg.onrender.com/meetings/${id}",
   {
     headers: {
       Authorization: `Bearer ${token}`
